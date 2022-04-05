@@ -1,0 +1,208 @@
+/*------------| UNIVERSAL STYLES |------------*/
+
+@font-face {
+    font-family: WorkSans;
+    src: url("https://content.codecademy.com/courses/learn-css-grid/project-ii/Resources/Work_Sans/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("https://content.codecademy.com/courses/learn-css-grid/project-ii/Resources/Poppins/Poppins-Regular.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(359deg, #3023AE, #EB7F7B);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+/*-----------------| HEADER |-----------------*/
+
+.navbar h1 {
+    align-self: center;
+    color: #FFFFFF;
+    font-family: Poppins;
+    grid-column: 3 / 4;
+    margin: 0;
+}
+
+.search-bar {
+    background-color: rgba(255, 255, 255, 0.35);
+    grid-column: 2 / 3;
+    height: 40px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+}
+
+/*------------------| NAV |-------------------*/
+
+.navbar {
+    background-color: rgba(120, 70, 154, 0.2);
+    display: grid;
+    grid-template-columns: 10px 1fr 3fr 1fr;
+    height: 60px;
+    justify-content: space-around;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+/*------------------| MAIN |------------------*/
+
+.container {
+    width: 1000px;
+}
+
+.site-body {
+    margin-left: 50px;
+    position: absolute;
+    top: 100px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.search-bar input {
+    float: left;
+    height: 18px;
+    margin-left: 7px;
+    margin-top: 9px;
+}
+
+.card-column input {
+    height: 18px;
+    margin-left: 15px;
+}
+
+.search-icon {
+    float: left;
+    margin-left: 7px;
+    margin-top: 9px;
+}
+
+.card-column {
+    background-color: #FFFFFF;
+    gap: 10px;
+    min-height: 700px;
+}
+
+.card-column h2 {
+    color: #2F2F2F;
+    display: inline-block;
+    font-family: WorkSans;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+.taskgroup-heading {
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+
+.card {
+    background-color: rgba(216, 216, 216, 0.21);
+    border: solid 1px rgba(151, 151, 151, 0.21);
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.rectangle {
+    display: inline-block;
+    height: 6px;
+    margin-left: 7px;
+    position: relative;
+    width: 57px;
+}
+
+.list-icon {
+    bottom: 0;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 7px;
+    position: absolute;
+}
+
+.task-description {
+    color: #2F2F2F;
+    font-family: WorkSans;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    margin-left: 7px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.ellipsis-icon {
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+}
+
+.task-date {
+    bottom: 0;
+    color: #9B9B9B;
+    display: inline-block;
+    font-family: WorkSans;
+    font-size: 10px;
+    left: 25px;
+    letter-spacing: 0.1px;
+    margin-bottom: 5px;
+    position: absolute;
+    text-align: left;
+}
+
+.yellow {
+    background-color: #FDCB1E;
+}
+
+.orange {
+    background-color: #FF7700;
+}
+
+.green {
+    background-color: #50E3C2;
+}
+
+.blue {
+    background-color: #3343E5;
+}
+
+.add-card {
+    background-color: rgba(216, 216, 216, 0.21);
+    border: solid 1px rgba(151, 151, 151, 0.21);
+    color: #2F2F2F;
+}
+
+.completed-projects {
+    grid-auto-rows: 100px;
+    grid-template-rows: 20px;
+}
+
+/*-----------------| SECTION |----------------*/
+
+
+/*-----------------| FOOTER |-----------------*/
+
+
+/*-------------| STYLESHEET END |-------------*/
+
+
